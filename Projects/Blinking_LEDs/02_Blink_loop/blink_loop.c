@@ -22,10 +22,8 @@ int main() {
             PORTB &= ( 0 << PINB3 );
             PORTB &= ( 0 << PINB4 );
 
-            if( index <= PINB4 ) {
-                PORTB ^= ( 1 << index );
-                index++;
-            }
+            PORTB ^= ( 1 << index );
+            index++;
 
             if( index > PINB4 ) {
                 index = PINB0;
