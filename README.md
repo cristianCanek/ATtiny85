@@ -107,3 +107,7 @@ Go to [this path](Projects/Blinking_LEDs), replicate the prototype in your bread
 
   avrdude done.  Thank you.
   ```
+
+  ## Projects in this repo.
+
+  * [Blinking LEDs](Projects/Blinking_LEDs): A set of blinking LEDs examples using a basic circuit in order to getting familiar with the I/O pins of the ATtiny 85 as outputs.
