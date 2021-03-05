@@ -8,7 +8,7 @@ Code examples using the Atmel ATtiny 85 AVR 8-bits microcontroller programmed us
 
 ### 1. Making our development board.
 
-There are some comercial development boards for the ATTiny 85, nevertheless is not a big deal to make your own board. This process can be faster than waiting for the delivery of one bought online and even more if you already have the required components:
+There are some commercial development boards for the ATTiny 85, nevertheless is not a big deal to make your own board. This process can be faster than waiting for the delivery of one bought online and even more if you already have the required components:
 
 * 1 prototype PCB board.
 * 1 microcontroller socket (8 pin preferably, but any other bigger also works).
@@ -30,7 +30,7 @@ The connector provided by this programmer is a Ten Pin ICSP connector, in the ma
 
 ![10-to-6 pin adapter](Misc/10-to-6_pin_adapter.png)
 
-... or even use dupont connectors and following the next diagram without using the adapter:
+... another option is to use Dupont cables and follow the next diagram without using any adapter:
 
 ![10-to-6 pin diagram](Misc/10-to-6_pin_diagram.png)
 
@@ -38,12 +38,12 @@ The connector provided by this programmer is a Ten Pin ICSP connector, in the ma
 
 For the USB Asp programmer, the drivers can be found at [fischl's website](https://www.fischl.de/usbasp/). Look for the one you need based on your Operating System.
 
-> For Windows 10, the one that works for me is the one listed as "libusbK (v3.0.7.0)" one.
-> ![Windows 10 device drivers](Misc/device_drivers.png)
+> For Windows 10, the one that works for me is the one listed as "libusbK (v3.0.7.0)".
+> ![Windows 10 device drivers](Misc/Device_drivers.png)
 
 ### 4. Installing the compiler.
 
-For these examples we are using the avr-gcc compiler. The official site of this compiler is [nongnu.org/avr-libc](https://www.nongnu.org/avr-libc/) adnt here you will be pointed to [sourceforge.net/projects/winavr/](https://sourceforge.net/projects/winavr/) to download the installer (if you are using Windows).
+For these examples we are using the avr-gcc compiler. The official site of this compiler is [nongnu.org/avr-libc](https://www.nongnu.org/avr-libc/) and here you will be pointed to [sourceforge.net/projects/winavr/](https://sourceforge.net/projects/winavr/) to download the installer (if you are using Windows).
 
 > Don't forget adding the location of the binaries and tools to your System Variables.
 > In my case they are "C:\WinAVR-20100110\bin" and "C:\WinAVR-20100110\utils\bin". They can look different depending on your setup preferences.
