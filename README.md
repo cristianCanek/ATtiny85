@@ -4,6 +4,17 @@
 
 Code examples using the Atmel ATtiny 85 AVR 8-bits microcontroller programmed using avr-gcc compiler and USB Asp programmer.
 
+## Contents.
+
+* [Getting started.](#Getting-started.)
+  * [1. Making our development board.](#1.-Making-our-development-board.)
+  * [2. Getting an AVR programmer.](#2.-Getting-an-AVR-programmer.)
+  * [3. Installing the programmer's driver.](#3.-Installing-the-programmer's-driver.)
+  * [4. Installing the compiler.](#4.-Installing-the-compiler.)
+  * [5. Flashing our first program.](#5.-Flashing-our-first-program.)
+* [Projects in this repo.](#Projects-in-this-repo.)
+* [Hardware used.](#Hardware-used.)
+
 ## Getting started.
 
 ### 1. Making our development board.
@@ -47,7 +58,6 @@ For these examples we are using the avr-gcc compiler. The official site of this 
 
 > Don't forget adding the location of the binaries and tools to your System Variables.
 > In my case they are "C:\WinAVR-20100110\bin" and "C:\WinAVR-20100110\utils\bin". They can look different depending on your setup preferences.
-
 
 ### 5. Flashing our first program.
 
@@ -111,3 +121,10 @@ Go to [this path](Projects/Blinking_LEDs), replicate the prototype in your bread
   ## Projects in this repo.
 
   * [Blinking LEDs](Projects/Blinking_LEDs): A set of blinking LEDs examples using a basic circuit in order to getting familiar with the I/O pins of the ATtiny 85 as outputs.
+
+  ## Hardware used.
+
+  * Atmel AVER ATtyni 85 microcontroller.
+  * [PDF datasheet](/Misc/ATtiny_85_Datasheet.pdf)
+  ![Pinout](/Misc/ATiny_85_Pinout.jpg)
+  _Credits: SpenceKonde's github._
