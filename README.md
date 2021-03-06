@@ -6,14 +6,14 @@ Code examples using the Atmel ATtiny 85 AVR 8-bits microcontroller programmed us
 
 ## Contents.
 
-* [Getting started.](#Getting-started.)
-  * [1. Making our development board.](#1.-Making-our-development-board.)
-  * [2. Getting an AVR programmer.](#2.-Getting-an-AVR-programmer.)
-  * [3. Installing the programmer's driver.](#3.-Installing-the-programmer's-driver.)
-  * [4. Installing the compiler.](#4.-Installing-the-compiler.)
-  * [5. Flashing our first program.](#5.-Flashing-our-first-program.)
-* [Projects in this repo.](#Projects-in-this-repo.)
-* [Hardware used.](#Hardware-used.)
+* [Getting started.](#getting-started)
+  * [1. Making our development board.](#1-making-our-development-board)
+  * [2. Getting an AVR programmer.](#2-getting-an-avr-programmer)
+  * [3. Installing the programmer's driver.](#3-installing-the-programmers-driver)
+  * [4. Installing the compiler.](#4-installing-the-compiler)
+  * [5. Flashing our first program.](#5-flashing-our-first-program)
+* [Projects in this repo.](#projects-in-this-repo)
+* [Hardware used.](#hardware-used)
 
 ## Getting started.
 
