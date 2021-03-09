@@ -20,32 +20,29 @@ uint8_t config();
 /* ------------------------------ MAIN ROUTINE ------------------------------ */
 int main() {
 
-    uint8_t index = PINB0;
+    uint8_t index = PB0;
     BLINK_DIRECTION direction = forward;
     
     if( (uint8_t) 0 == config() ) {
-        while( 1 ) {/* Turn-off all the leds. */
-
-            PORTB &= ( 0 << PINB0 );
-            PORTB &= ( 0 << PINB1 );
-            PORTB &= ( 0 << PINB2 );
-            PORTB &= ( 0 << PINB3 );
-            PORTB &= ( 0 << PINB4 );
+        while( 1 ) {
+            
+            /* Turn-off all the LEDs. */
+            PORTB = 0;
 
             if( forward == direction ) {
                 PORTB ^= ( 1 << index );
                 index++;
                 
-                if( index > PINB4 ) {
-                    index = PINB3;
+                if( index > PB4 ) {
+                    index = PB3;
                     direction = backward;
                 }
             }
             else {
                 PORTB ^= ( 1 << index );
                 
-                if( PINB0 == index ) {
-                    index = PINB1;
+                if( PB0 == index ) {
+                    index = PB1;
                     direction = forward;
                 }
                 else {
@@ -65,11 +62,12 @@ int main() {
 
 /* Configuration routine. */
 uint8_t config() {
-    DDRB |= ( 1 << PINB0 ); /* Set pin PB1 as OUTPUT */
-    DDRB |= ( 1 << PINB1 ); /* Set pin PB2 as OUTPUT */
-    DDRB |= ( 1 << PINB2 ); /* Set pin PB3 as OUTPUT */
-    DDRB |= ( 1 << PINB3 ); /* Set pin PB4 as OUTPUT */
-    DDRB |= ( 1 << PINB4 ); /* Set pin PB5 as OUTPUT */
+    /* Set pins 1 to 5 direction as OUTPUTs. */
+    DDRB = ( 1 << DDB4 )
+         | ( 1 << DDB3 )
+         | ( 1 << DDB2 )
+         | ( 1 << DDB1 )
+         | ( 1 << DDB0 );
 
     return (uint8_t) 0;
 }
